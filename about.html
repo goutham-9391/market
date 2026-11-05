@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Goutham Super Market</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e0f7fa,#f1f8e9,#fff3e0);
+    min-height:100vh;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#0066ff,#00c853);
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo{
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#0066ff;
+}
+
+/* Main Section */
+.about-section{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    text-align:center;
+}
+
+.about-section h1{
+    color:#0066ff;
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.about-section p{
+    color:#444;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+/* Image */
+.about-image{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Information Cards */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    width:340px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h2{
+    color:#00c853;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:15px 35px;
+    background:linear-gradient(135deg,#0066ff,#00c853);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+    margin-top:50px;
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">Goutham Super Market</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="about-section">
+
+    <h1>About Goutham Super Market</h1>
+
+    <p>
+        Bringing Freshness, Quality and Value to Every Customer.
+    </p>
+
+    <img src="about.avif"
+         alt="Goutham Super Market"
+         class="about-image">
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>Who We Are</h2>
+            <p>
+                Goutham Super Market is a trusted shopping destination
+                offering groceries, fruits, vegetables, dairy products,
+                household essentials and more under one roof.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>
+                To provide high-quality products at affordable prices
+                while ensuring a convenient and enjoyable shopping
+                experience for every customer.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Our Vision</h2>
+            <p>
+                To become the most preferred supermarket by delivering
+                excellence, freshness and customer satisfaction every day.
+            </p>
+        </div>
+
+    </div>
+
+    <a href="contact.html" class="btn">
+        Next → Contact Us
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 Goutham Super Market | Freshness • Quality • Savings</p>
+</footer>
+
+</body>
+</html>

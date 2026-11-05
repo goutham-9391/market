@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - GOUTHAM SUPER MARKET</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fa;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#0d6efd,#00b894);
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:light green;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px 15px;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#0d6efd;
+    border-radius:5px;
+}
+
+/* Products Section */
+.products{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.products h1{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.products p{
+    font-size:18px;
+    margin-bottom:30px;
+    color:#555;
+}
+
+/* Product Gallery */
+.product-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    color:#0d6efd;
+    margin:15px 0 10px;
+}
+
+.product-card p{
+    padding:0 15px 20px;
+    font-size:15px;
+}
+
+/* Details */
+.details{
+    margin-top:40px;
+    background:white;
+    width:90%;
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.details h2{
+    color:#00b894;
+    margin-bottom:15px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#00b894;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#0d6efd;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">Goutham Super Market</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="products">
+
+    <h1>Our Products</h1>
+    <p>Explore our fresh groceries, fruits, vegetables and daily essentials.</p>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="fruits.jpeg" alt="Fresh Fruits">
+            <h3>Fresh Fruits</h3>
+            <p>Healthy and fresh fruits available daily.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="vegetables.jpeg" alt="Fresh Vegetables">
+            <h3>Fresh Vegetables</h3>
+            <p>Farm-fresh vegetables at affordable prices.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="rice.jpeg" alt="Rice & Grains">
+            <h3>Rice & Grains</h3>
+            <p>Premium quality rice and grains.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="milk.jpeg" alt="Dairy Products">
+            <h3>Dairy Products</h3>
+            <p>Milk, butter, cheese and other dairy items.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="snak.jpeg" alt="Snacks & Beverages">
+            <h3>Snacks & Beverages</h3>
+            <p>Tasty snacks and refreshing drinks.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="household.jpeg" alt="Household Essentials">
+            <h3>Household Essentials</h3>
+            <p>Cleaning products and daily-use items.</p>
+        </div>
+
+    </div>
+
+    <div class="details">
+        <h2>Why Choose Us?</h2>
+        <p>
+            ✔ Fresh and Quality Products<br>
+            ✔ Affordable Prices<br>
+            ✔ Daily New Stock<br>
+            ✔ Friendly Customer Service<br>
+            ✔ Wide Variety of Products<br>
+            ✔ Clean and Hygienic Environment
+        </p>
+    </div>
+
+    <a href="offers.html" class="btn">Next → Offers Page</a>
+
+</section>
+
+<footer>
+    <p>© 2026 Goutham Super Market | Freshness • Quality • Savings</p>
+</footer>
+
+</body>
+</html>

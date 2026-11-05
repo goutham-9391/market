@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offers - Goutham Super Market</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,#0d6efd,#00b894);
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:10px 15px;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#0d6efd;
+    border-radius:5px;
+}
+
+/* Main Section */
+.offers-section{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.offers-section h1{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.offers-section p{
+    color:#555;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+/* Offer Image */
+.offer-image{
+    width:90%;
+    max-width:1000px;
+    height:500px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Offer Cards */
+.offer-container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.offer-card{
+    background:white;
+    width:220px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.offer-card:hover{
+    transform:translateY(-5px);
+}
+
+.offer-card h3{
+    color:#00b894;
+    margin-bottom:10px;
+}
+
+.offer-card p{
+    color:#444;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#00b894;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#0d6efd;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Goutham Super Market</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="offers-section">
+
+    <h1>Special Offers & Discounts</h1>
+    <p>Enjoy exciting deals and save more on your favorite products.</p>
+
+    <!-- Single Offer Image -->
+    <img src="offers.png"
+         alt="Offers"
+         class="offer-image">
+
+    <div class="offer-container">
+
+        <div class="offer-card">
+            <h3>20% OFF</h3>
+            <p>Fresh Fruits Collection</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>Buy 1 Get 1</h3>
+            <p>Selected Snack Items</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>15% OFF</h3>
+            <p>Vegetables & Greens</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>10% OFF</h3>
+            <p>Dairy Products</p>
+        </div>
+
+    </div>
+
+    <a href="about.html" class="btn">Next → About Us</a>
+
+</section>
+
+<footer>
+    <p>© 2026 Goutham Super Market | Freshness • Quality • Savings</p>
+</footer>
+
+</body>
+</html>
